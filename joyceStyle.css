@@ -11,14 +11,9 @@ body {
 }
 
 .btn-primary {
-    color: #fff;
+    color: #ffff;
     background-color: #6ABC19;
     border-color: #6ABC19;
-}
-.btn-primary:hover {
-    color: #fff;
-    background-color: #17A608;
-    border-color: #17A608;
 }
 
 #home, #research, #publications, #contact {
