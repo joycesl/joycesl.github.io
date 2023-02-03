@@ -1,5 +1,8 @@
 body {
-	position: relative;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .navbar, .btn {
@@ -7,7 +10,7 @@ body {
 }
 
 .btn-primary {
-	color: #ffff;
+	color: #FFFF;
 	border-color: #6ABC19;
     background-color: #6ABC19;
 }
@@ -19,12 +22,27 @@ body {
 
 #home, #research, #publications, #contact {
 	background-color: #E1F7A5;
+	border-radius: 15px;
+}
+
+.active {
+	color: #E1F7A5 !important;
 }
 
 h1, h2 {
 	color: #17A608;
 }
 
-h4, footer {
+h4 {
 	color: #6ABC19;
+}
+
+footer {
+	margin-top: -35px;
+	padding-top: 94px;
+	color: #E1F7A5;
+	width: 100%;
+    height: 119px;
+    background-image: url('images/grass.png');
+	background-repeat: repeat-x;
 }
