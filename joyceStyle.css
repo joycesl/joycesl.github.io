@@ -6,14 +6,15 @@ body {
 	background-color: #6ABC19;
 }
 
-.btn {
+.btn-primary {
+	color: #ffff;
 	border-color: #6ABC19;
+    background-color: #6ABC19;
 }
 
-.btn-primary {
-    color: #ffff;
-    background-color: #6ABC19;
-    border-color: #6ABC19;
+.btn-primary:hover, .btn-primary:active {
+	background-color: #17A608;
+	border-color: #17A608;
 }
 
 #home, #research, #publications, #contact {
@@ -26,16 +27,4 @@ h1, h2 {
 
 h4, footer {
 	color: #6ABC19;
-}
-
-/* make room for the nav bar */
-h1[id],
-h2[id],
-h3[id],
-h4[id],
-h5[id],
-h6[id],
-dt[id]{
-    padding-top: 60px;
-    margin-top: -40px;
 }
