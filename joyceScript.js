@@ -1,6 +1,6 @@
 /* TO DO:
 
-** Navigation - display and hide
+** Navigation
 
 ** Contact form
 

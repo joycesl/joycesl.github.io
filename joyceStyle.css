@@ -1,3 +1,34 @@
-.navbar {
+body {
+	position: relative;
+}
+
+.navbar, .btn {
 	background-color: #6ABC19;
+}
+
+.btn {
+	border-color: #6ABC19;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #6ABC19;
+    border-color: #6ABC19;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #17A608;
+    border-color: #17A608;
+}
+
+#home, #research, #publications, #contact {
+	background-color: #E1F7A5;
+}
+
+h1, h2 {
+	color: #17A608;
+}
+
+h4 {
+	color: #6ABC19;
 }
