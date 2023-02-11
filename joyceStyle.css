@@ -47,21 +47,11 @@ footer {
 	background-repeat: repeat-x;
 }
 
-#scroll-btn {       
-    opacity: 0;   
-    width: 40px;
-    height: 40px;
-    color: #fff;
-    background-color: #6ABC19;
-    position: fixed;
-    bottom: 10%;
-    right: 10%;    
-    border: 2px solid #fff;
-    border-radius: 50%; 
-    font: bold 20px monospace;       
-    transition: opacity 0.5s, transform 0.5s;
-}
-#scroll-btn.show {      
-    opacity: 1;  
-    transition: opacity 1s, transform 1s;     
+#btn-back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+	border-color: white;
+	border-width: 3px;
 }

@@ -1,28 +1,31 @@
 // Scroll to top button
-// Adapted from: https://w3collective.com/scroll-to-top-button-javascript/
+// Adapted from: https://mdbootstrap.com/docs/standard/extended/back-to-top/
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  const scrollTop = function () {
-  const scrollBtn = document.createElement("button");
-  scrollBtn.innerHTML = "&uarr;";
-  scrollBtn.setAttribute("id", "scroll-btn");
-  document.body.appendChild(scrollBtn);
-  const scrollBtnDisplay = function () {
-  window.scrollY > window.innerHeight
-    ? scrollBtn.classList.add("show")
-    : scrollBtn.classList.remove("show");
+	//Get the button
+	let mybutton = document.getElementById("btn-back-to-top");
+
+	// When the user scrolls down 500px from the top of the document, show the button
+	window.onscroll = function () {
+	scrollFunction();
 	};
-	window.addEventListener("scroll", scrollBtnDisplay);
-	const scrollWindow = function () {  
-		if (window.scrollY != 0) {
-			setTimeout(function () {
-			window.scrollTo(0, window.scrollY - 500);
-				scrollWindow();
-			}, 10);
-		}
-	};
-	scrollBtn.addEventListener("click", scrollWindow);
-	};
-	scrollTop();
+
+	function scrollFunction() {
+	if (
+	document.body.scrollTop > 500 ||
+	document.documentElement.scrollTop > 500
+	) {
+	mybutton.style.display = "block";
+	} else {
+	mybutton.style.display = "none";
+	}
+	}
+	// When the user clicks on the button, scroll to the top of the document
+	mybutton.addEventListener("click", backToTop);
+
+	function backToTop() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+	}
 });
