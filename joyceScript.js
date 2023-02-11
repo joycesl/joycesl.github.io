@@ -13,19 +13,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	function scrollFunction() {
 	if (
-	document.body.scrollTop > 500 ||
-	document.documentElement.scrollTop > 500
+		document.body.scrollTop > 500 ||
+		document.documentElement.scrollTop > 500
 	) {
-	mybutton.style.display = "block";
+		mybutton.style.display = "block";
 	} else {
-	mybutton.style.display = "none";
+		mybutton.style.display = "none";
 	}
 	}
 	// When the user clicks on the button, scroll to the top of the document
 	mybutton.addEventListener("click", backToTop);
 
 	function backToTop() {
-	document.body.scrollTop = 0;
-	document.documentElement.scrollTop = 0;
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
 	}
 });
