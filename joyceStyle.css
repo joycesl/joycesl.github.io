@@ -62,3 +62,12 @@ footer {
 	color: #FFFF;
 	background-color: #6ABC19;
 }
+
+footer a:hover {
+	color: white;
+}
+
+footer a {
+	color: #E1F7A5;
+	text-decoration: none;
+}
