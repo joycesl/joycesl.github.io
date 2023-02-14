@@ -63,11 +63,16 @@ footer {
 	background-color: #6ABC19;
 }
 
-footer a, footer a:link, footer a:visited {
+footer a {
 	color: #E1F7A5;
+	text-decoration: none;
+}
+
+a:visited {
 	text-decoration: none;
 }
 
 footer a:hover {
 	color: white;
+	text-decoration: none;
 }
